@@ -21,7 +21,7 @@ app.add_middleware(
 # 2. Load the Actual Trained ML Model
 MODEL_PATH = "animal_classification_model.keras"
 print("Loading trained model into Backend...")
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 print("Model loaded successfully!")
 
 # 3. Translation Dictionary (Locked via Main Chat)[cite: 1]
